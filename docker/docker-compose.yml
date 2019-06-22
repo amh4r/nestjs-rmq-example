@@ -1,0 +1,19 @@
+version: "3"
+services:
+  mq:
+    image: rabbitmq:3-management
+    environment:
+      RABBITMQ_DEFAULT_USER: hip
+      RABBITMQ_DEFAULT_PASS: hop
+      RABBITMQ_DEFAULT_VHOST: /
+    healthcheck:
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ports:
+      - "4369:4369"
+      - "5671:5671"
+      - "5672:5672"
+      - "15671:15671"
+      - "15672:15672"
+      - "25672:25672"

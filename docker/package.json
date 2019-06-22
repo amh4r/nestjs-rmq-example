@@ -1,0 +1,9 @@
+{
+  "name": "docker",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "docker-compose -p mq_demo -f docker-compose.yml up -d --build",
+    "stop": "docker-compose -p mq_demo -f docker-compose.yml down"
+  }
+}

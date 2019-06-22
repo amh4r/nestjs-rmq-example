@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-rmq-example",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "install:all": "npm run install:nest && npm run install:sender",
+    "install:nest": "cd nest-service && npm i",
+    "install:sender": "cd message-sender && npm i",
+    "start:nest": "cd nest-service && npm start",
+    "start:rmq": "cd docker && npm start",
+    "start:sender": "cd message-sender && npm start",
+    "stop:rmq": "cd docker && npm stop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
